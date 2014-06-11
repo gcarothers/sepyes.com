@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/css/theme.bootstrap.css">
+    <link rel="stylesheet" href="/site.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Sebastopol Entrepreneurs Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+  </head>
+  <body>
+    <div class="container">
+    {% include navbar.html %}
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+    {{ content }}
+      <hr>
+      <footer>
+        <div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
+        <div class="col-md-4">
+          <p>
+          <span itemprop="name">Sebastopol Entrepreneurs Project</span><br />
+          <a itemprop="telephone" href="tel:+1-707-559-8101">(707) 559-8101</a><br />
+          <a itemprop="email" href="mailto:sonomatrikes@gmail.com">sonomatrikes@gmail.com</a>
+          </p>
+          <p><strong><i class="fa fa-truck"></i> We're moving!</strong> Please note the new address!</p>
+          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">500 North Main Street</span><br />
+            <span itemprop="addressLocality">Sebastopol</span>,
+            <span itemprop="addressRegion">CA</span> <span itemprop="postalCode">95472</span>
+          </p>
         </div>
-
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a href="https://www.facebook.com/SEPYES"><i class="fa fa-lg fa-facebook"></i> Facebook</a>
+            <li><a href="https://twitter.com/tweetsepyes"><i class="fa fa-lg fa-twitter"></i> Twitter</a>
+          </ul>
+        </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.3.0/holder.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.widgets.js"></script>
     </body>
 </html>
