@@ -17,6 +17,7 @@ p {
 h1, h2, h3 {
   font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
   color: #2E3191;
+  font-weight: bold;
 }
 
 .wf-loading h1, .wf-loading h2, .wf-loading h3 {
