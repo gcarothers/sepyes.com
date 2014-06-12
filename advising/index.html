@@ -4,3 +4,39 @@ title: Advising
 ---
 
 <h1>Advising</h1>
+
+<div class="row">
+	<div class="col-md-6">
+		<h2>What our Advising provides</h2>
+		<p>SEP offers a team of knowledgeable professionals who serve as volunteer advisors to people who desire help and advice in launching or growing their business. Client applications are initially reviewed and acceptance will be followed by two free in-depth interviews to establish guidelines for future progress. Upon mutual agreement you will then officially become a SEP client and pay a nominal monthly fee (currently $50) for as long as you deem necessary to seek our advise. You will work with SEP staff and business professionals from various vocations to develop a set of progress criteria based on your business plan. These project projections will evolve into milestones or benchmarks you will be expected to meet such as product development and patent or copywrite protection, manufacturing, marketing, funding, etc. SEP is at your service, for consultation and advise!</p>
+		<p>
+			<a href="/advising/apply.html" class="btn btn-primary btn-lg"><i class="fa fa-user"></i> Apply for advising</a>
+		</p>
+    <img class="img-rounded img-responsive" src="holder.js/100%x300/sky">
+    <h2>Current Clients</h2>
+    <div class="row">
+	    {% for client in site.data.clients %}
+	    <div class="col-xs-4">
+		  	<a href="{{ client.url }}"><img class="img-responsive" src="{{client.logo}}" alt="{{ client.name }}"></a>
+	  	</div>
+	    {% endfor %}
+    </div>
+	</div>
+	<div class="col-md-6">
+		<h2>Our Advisors</h2>
+		<ul class="media-list">
+	  	{% for advisor in site.data.advisors %}
+		  <li class="media">
+		    <div class="pull-right">
+		      <img class="media-object img-circle" src="holder.js/100x100/lava">
+		    </div>
+		    <div class="media-body">
+		      <h4 class="media-heading">{{ advisor.name }}</h4>
+      		{{ advisor.bio | markdownify }}
+		    </div>
+		  </li>
+    	{% endfor %}
+		</ul>
+
+	</div>
+</div>
