@@ -8,7 +8,9 @@ title: Advising
 <div class="row">
   <div class="col-md-6">
     <h2>What our Advising provides</h2>
-    <p>SEP offers a team of knowledgeable professionals who serve as volunteer advisors to people who desire help and advice in launching or growing their business. Client applications are initially reviewed and acceptance will be followed by two free in-depth interviews to establish guidelines for future progress. Upon mutual agreement you will then officially become a SEP client and pay a nominal monthly fee (currently $50) for as long as you deem necessary to seek our advise. You will work with SEP staff and business professionals from various vocations to develop a set of progress criteria based on your business plan. These project projections will evolve into milestones or benchmarks you will be expected to meet such as product development and patent or copywrite protection, manufacturing, marketing, funding, etc. SEP is at your service, for consultation and advise!</p>
+    <p>SEP’s team of advisors comes from varied backgrounds including business leaders, marketing specialists, legal professionals, web developers and product innovators to name a few.  Some of our advisors are no longer working in the conventional sense; some are starting new businesses themselves or sharing their expertise by consulting with existing or new businesses.  Whatever their current position may be, SEP Business Advisors have volunteered to offer their extensive experience to our clients to “Help Businesses Start, Learn, Grow and Thrive in West Sonoma County”.</p>
+    <p>All of SEP’s volunteer business advisors take our roles very seriously.  We schedule two initial client meetings at no charge so that our client can determine if SEP’s approach is right for them and our advisors can start to work with the client  to map out a plan for success.  Once a client signs on their advisor will work with them to identify specific aspects of their business plan and develop strategy to address them.</p>
+    <p>Clients working with Sebastopol Entrepreneurs Project business advisors agree to a minimum payment of $50 per month for the advisory services.  While our advisors provide their support on a strictly volunteer basis, this fee helps SEP to provide services to the broader community.  SEP business advisors work with their clients to develop a plan and schedule that works for all parties – usually multiple working sessions/meetings per month.</p>
     <p>
       <a href="/advising/apply.html" class="btn btn-primary btn-lg"><i class="fa fa-user"></i> Apply for advising</a>
     </p>
@@ -28,7 +30,11 @@ title: Advising
       {% for advisor in site.data.advisors %}
       <li class="media">
         <div class="pull-right">
+          {% if advisor.img %}
+          <img height=100 width=100 class="media-object img-circle" src="/img/photos/{{advisor.img}}">
+          {% else %}
           <img class="media-object img-circle" src="holder.js/100x100/lava">
+          {% endif %}
         </div>
         <div class="media-body">
           <h4 class="media-heading">{{ advisor.name }}</h4>
