@@ -2,26 +2,13 @@ body {
   padding-top: 70px;
 }
 
-#map-canvas {
-  min-height: 400px; 
-  margin: 0px;
-  padding: 0px;
-  border-radius: 6px;
-}
-
 p {
   max-width: 85rem;
   white-space: normal;
 }
 
 h1, h2, h3 {
-  font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
   color: #2E3191;
-  font-weight: bold;
-}
-
-.wf-loading h1, .wf-loading h2, .wf-loading h3 {
-  visibility: hidden;
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
